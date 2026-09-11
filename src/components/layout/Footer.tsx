@@ -82,7 +82,7 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-2 py-6 text-[0.85rem] text-silver-300/70 sm:flex-row">
+        <Container className="flex flex-col items-center justify-between gap-2 py-6 pb-40 text-center text-[0.85rem] text-silver-300/70 sm:flex-row sm:pb-6 sm:text-left">
           <span>© {new Date().getFullYear()} Madeez Carz World Ltd. All rights reserved.</span>
           <span>Company registered in England &amp; Wales.</span>
         </Container>

@@ -25,7 +25,7 @@ export function Logo({ size = "nav" }: LogoProps) {
       width={LOGO_NATURAL_WIDTH}
       height={LOGO_NATURAL_HEIGHT}
       priority
-      className={`h-full w-auto object-contain ${sizeClasses[size]}`}
+      className={`w-auto max-w-full object-contain ${sizeClasses[size]}`}
     />
   );
 

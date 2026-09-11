@@ -11,7 +11,7 @@ export function FloatingWhatsApp() {
 
   return (
     <div
-      className="fixed bottom-5 left-4 z-40 md:bottom-6 md:left-6"
+      className="fixed bottom-5 left-4 z-20 md:bottom-6 md:left-6"
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
     >
