@@ -13,7 +13,7 @@ function HeroCopy() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: -36 }}
+        initial={{ opacity: 0, x: -18 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.65, ease: easeOut }}
@@ -22,7 +22,7 @@ function HeroCopy() {
       </motion.div>
 
       <motion.h1
-        initial={{ opacity: 0, x: -36 }}
+        initial={{ opacity: 0, x: -18 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.65, delay: 0.08, ease: easeOut }}

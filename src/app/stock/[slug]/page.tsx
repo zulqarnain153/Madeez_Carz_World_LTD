@@ -103,7 +103,7 @@ export default async function VehicleDetailPage({ params }: PageProps) {
                 href={telHref}
                 className="flex items-center justify-center gap-2.5 rounded-full bg-marque-500 px-6 py-3.5 text-[0.95rem] font-semibold text-white hover:bg-marque-600"
               >
-                <Phone className="h-4.5 w-4.5" /> Call About This Vehicle
+                <Phone className="h-4.5 w-4.5 shrink-0" /> Call Us
               </a>
               <a
                 href={whatsappHref}
@@ -111,7 +111,7 @@ export default async function VehicleDetailPage({ params }: PageProps) {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2.5 rounded-full border border-ink/15 px-6 py-3.5 text-[0.95rem] font-semibold text-ink hover:border-marque-500 hover:text-marque-600"
               >
-                <FaWhatsapp className="h-4.5 w-4.5" /> WhatsApp Us
+                <FaWhatsapp className="h-4.5 w-4.5 shrink-0" /> WhatsApp Us
               </a>
             </div>
 

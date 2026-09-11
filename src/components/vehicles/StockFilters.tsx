@@ -59,13 +59,13 @@ export function StockFilters({ value, onChange, resultCount }: StockFiltersProps
           />
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <label className="sr-only" htmlFor="bodyType">Body type</label>
           <select
             id="bodyType"
             value={value.bodyType}
             onChange={(e) => onChange({ ...value, bodyType: e.target.value as StockFilterState["bodyType"] })}
-            className="rounded-full border border-ink/12 bg-canvas px-4 py-3 text-[0.9rem] text-ink"
+            className="w-full rounded-full border border-ink/12 bg-canvas px-4 py-3 text-[0.9rem] text-ink sm:w-auto"
           >
             {bodyTypes.map((b) => (
               <option key={b} value={b}>
@@ -79,7 +79,7 @@ export function StockFilters({ value, onChange, resultCount }: StockFiltersProps
             id="fuelType"
             value={value.fuelType}
             onChange={(e) => onChange({ ...value, fuelType: e.target.value as StockFilterState["fuelType"] })}
-            className="rounded-full border border-ink/12 bg-canvas px-4 py-3 text-[0.9rem] text-ink"
+            className="w-full rounded-full border border-ink/12 bg-canvas px-4 py-3 text-[0.9rem] text-ink sm:w-auto"
           >
             {fuelTypes.map((f) => (
               <option key={f} value={f}>
@@ -89,13 +89,13 @@ export function StockFilters({ value, onChange, resultCount }: StockFiltersProps
           </select>
 
           <label className="sr-only" htmlFor="sort">Sort by</label>
-          <div className="flex items-center gap-2 rounded-full border border-ink/12 bg-canvas px-4 py-3">
-            <SlidersHorizontal className="h-4 w-4 text-ink-faint" />
+          <div className="flex w-full items-center gap-2 rounded-full border border-ink/12 bg-canvas px-4 py-3 sm:w-auto">
+            <SlidersHorizontal className="h-4 w-4 shrink-0 text-ink-faint" />
             <select
               id="sort"
               value={value.sort}
               onChange={(e) => onChange({ ...value, sort: e.target.value as StockFilterState["sort"] })}
-              className="bg-transparent text-[0.9rem] text-ink"
+              className="w-full bg-transparent text-[0.9rem] text-ink sm:w-auto"
             >
               <option value="featured">Featured</option>
               <option value="price-asc">Price: Low to High</option>

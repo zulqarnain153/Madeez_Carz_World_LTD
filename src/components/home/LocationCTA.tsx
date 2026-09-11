@@ -15,10 +15,10 @@ import {
 
 export function LocationCTA() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-14 sm:py-20 lg:py-28">
       <Container className="grid gap-10 rounded-md border border-ink/8 bg-canvas-raised p-8 sm:p-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
@@ -39,7 +39,7 @@ export function LocationCTA() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
+          initial={{ opacity: 0, x: 18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}

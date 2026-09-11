@@ -16,7 +16,7 @@ const quickLinks = [
 export function Footer() {
   return (
     <footer className="bg-marque-900 text-silver-300">
-      <Container className="grid gap-12 py-16 md:grid-cols-[1.3fr_1fr_1.2fr]">
+      <Container className="grid gap-10 py-12 sm:py-14 md:grid-cols-[1.3fr_1fr_1.2fr] md:gap-12 md:py-16">
         <div className="flex flex-col gap-4">
           <Logo size="footer" />
           <p className="max-w-xs text-[0.95rem] leading-relaxed text-silver-300/90">

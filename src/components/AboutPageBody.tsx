@@ -11,10 +11,10 @@ const easeOut = [0.22, 1, 0.36, 1] as const;
 
 export function AboutIntro() {
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <Container className="flex max-w-3xl flex-col gap-6">
         <motion.p
-          initial={{ opacity: 0, x: -28 }}
+          initial={{ opacity: 0, x: -18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, ease: easeOut }}
@@ -26,7 +26,7 @@ export function AboutIntro() {
           exactly who you&apos;re speaking with.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x: 28 }}
+          initial={{ opacity: 0, x: 18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, delay: 0.1, ease: easeOut }}
@@ -44,10 +44,10 @@ export function AboutIntro() {
 
 export function AboutApproach() {
   return (
-    <section className="border-y border-ink/8 bg-canvas-raised py-16 sm:py-24">
+    <section className="border-y border-ink/8 bg-canvas-raised py-12 sm:py-16 lg:py-24">
       <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <motion.div
-          initial={{ opacity: 0, x: -28 }}
+          initial={{ opacity: 0, x: -18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, ease: easeOut }}
@@ -59,7 +59,7 @@ export function AboutApproach() {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 28 }}
+          initial={{ opacity: 0, x: 18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, delay: 0.1, ease: easeOut }}
@@ -81,7 +81,7 @@ export function AboutApproach() {
 
 export function AboutContactCTA() {
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

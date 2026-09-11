@@ -17,7 +17,7 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
     <section className="border-b border-ink/8 bg-canvas-raised py-14 sm:py-20">
       <Container className="flex max-w-2xl flex-col gap-4">
         <motion.div
-          initial={{ opacity: 0, x: -28 }}
+          initial={{ opacity: 0, x: -18 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: easeOut }}
         >

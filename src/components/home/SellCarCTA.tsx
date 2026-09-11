@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 export function SellCarCTA() {
   return (
-    <section className="relative overflow-hidden bg-marque-900 py-20 sm:py-24">
+    <section className="relative overflow-hidden bg-marque-900 py-14 sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute -right-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-marque-500/25 blur-3xl" />
       <Container className="relative flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
         <motion.div

@@ -67,7 +67,7 @@ export function SellCarForm() {
         disabled={status === "submitting"}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="self-start rounded-full bg-marque-500 px-7 py-3.5 text-[0.95rem] font-semibold text-white transition-colors hover:bg-marque-600 disabled:opacity-60"
+        className="w-full rounded-full bg-marque-500 px-7 py-3.5 text-[0.95rem] font-semibold text-white transition-colors hover:bg-marque-600 disabled:opacity-60 sm:w-auto sm:self-start"
       >
         {status === "submitting" ? "Submitting…" : "Submit Vehicle Enquiry"}
       </motion.button>

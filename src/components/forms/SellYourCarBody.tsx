@@ -12,7 +12,7 @@ export function SellYourCarBody() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: -28 }}
+        initial={{ opacity: 0, x: -18 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.55, ease: easeOut }}
@@ -22,7 +22,7 @@ export function SellYourCarBody() {
       </motion.div>
 
       <motion.aside
-        initial={{ opacity: 0, x: 28 }}
+        initial={{ opacity: 0, x: 18 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.55, delay: 0.1, ease: easeOut }}

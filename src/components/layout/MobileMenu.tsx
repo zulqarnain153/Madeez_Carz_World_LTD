@@ -92,7 +92,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 href={telHref}
                 className="flex items-center justify-center gap-2 rounded-full bg-marque-500 px-5 py-3.5 text-base font-semibold text-white"
               >
-                <Phone className="h-4.5 w-4.5" /> Call {business.contact.phoneDisplay}
+                <Phone className="h-4.5 w-4.5 shrink-0" /> {business.contact.phoneDisplay}
               </a>
               <a
                 href={whatsappHref}
@@ -100,7 +100,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-full border border-ink/15 px-5 py-3.5 text-base font-semibold text-ink"
               >
-                <FaWhatsapp className="h-4.5 w-4.5" /> WhatsApp Us
+                <FaWhatsapp className="h-4.5 w-4.5 shrink-0" /> WhatsApp Us
               </a>
             </div>
           </motion.div>

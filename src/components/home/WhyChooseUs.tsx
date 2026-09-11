@@ -26,10 +26,10 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-14 sm:py-20 lg:py-28">
       <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
         <motion.div
-          initial={{ opacity: 0, x: 32 }}
+          initial={{ opacity: 0, x: 18 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}

@@ -12,7 +12,7 @@ export function FeaturedStock() {
   const featured = getFeaturedVehicles();
 
   return (
-    <section className="bg-canvas-sunken/60 py-20 sm:py-28">
+    <section className="bg-canvas-sunken/60 py-14 sm:py-20 lg:py-28">
       <Container>
         <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           <motion.div
