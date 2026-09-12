@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
-function HeroCopy() {
+function HeroLeadIn() {
   return (
     <>
       <motion.div
@@ -32,7 +32,13 @@ function HeroCopy() {
         <br />
         <span className="text-marque-600">Brighter Journeys</span>
       </motion.h1>
+    </>
+  );
+}
 
+function HeroDetails() {
+  return (
+    <>
       <motion.p
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -84,13 +90,16 @@ export function Hero() {
         </div>
         <Container className="relative flex min-h-[600px] items-center py-20 lg:min-h-[680px]">
           <div className="flex max-w-xl flex-col gap-6">
-            <HeroCopy />
+            <HeroLeadIn />
+            <HeroDetails />
           </div>
         </Container>
       </div>
 
-      {/* Mobile: image and text are stacked, never overlapping, so both
-          stay fully readable and the car is never obscured or clipped. */}
+      {/* Mobile: eyebrow + heading overlay the top-left (lighter) area of
+          the image so the car stays visible on the right and the two
+          feel like one composition; description + CTAs sit in the
+          white background area below, never over the photo. */}
       <div className="sm:hidden">
         <motion.div
           initial={{ opacity: 0, scale: 1.04 }}
@@ -107,9 +116,14 @@ export function Hero() {
             className="object-cover object-[90%_65%]"
           />
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-canvas to-transparent" />
+          <div className="absolute inset-x-0 top-0 flex flex-col gap-3 px-5 pt-5">
+            <div className="flex max-w-[62%] flex-col gap-3">
+              <HeroLeadIn />
+            </div>
+          </div>
         </motion.div>
         <Container className="flex flex-col gap-6 pb-14 pt-8">
-          <HeroCopy />
+          <HeroDetails />
         </Container>
       </div>
     </section>
